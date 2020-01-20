@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Synchronous Operation</title>
+    <title>Asynchronous Operation</title>
 </head>
 <body>
     <script>
-        console.log("Plant corn");
-        console.log("Water plant");
-        console.log("Add fertilizer");
+        console.log('plant maize');
+        setTimeout(function(){
+            console.log('water plant');//after 3 second this console will execute
+        },3000);
+        console.log('Add fertilizer');
     </script>
 </body>
 </html>
