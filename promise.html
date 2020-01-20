@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Promise</title>
+</head>
+<body>
+    <script>
+        const weather = true;
+        const date = new Promise((resolve,reject)=>{
+            if(weather){
+                const dateDetails ={
+                   name: 'ABC Restaurant',
+                   location: 'Ahmedabad',
+                   table: 5
+                };
+                resolve(dateDetails);
+            }else{
+                reject(new Error('Bad weather, so no Date'));
+            }
+        });
+        console.log('dateDetails');
+    </script> 
+</body>
+</html>
